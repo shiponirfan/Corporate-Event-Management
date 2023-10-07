@@ -133,9 +133,9 @@ const Navbar = () => {
                   </li>
                 </ul>
               </div>
-              <button className="bg-corporate-color py-3 font-medium px-8 hover:bg-black duration-300 rounded-lg text-white">
+              <Link to="/login"><button className="bg-corporate-color py-3 font-medium px-8 hover:bg-black duration-300 rounded-lg text-white">
                 Login
-              </button>
+              </button></Link>
             </div>
           </div>
         </div>

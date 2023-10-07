@@ -16,6 +16,9 @@ export default {
       height: {
         'bannerSlider': 'calc(100vh - 136px)',
       },
+      backgroundImage: {
+        'footer-bg': "url('/images/banner/banner2.jpg')",
+      },
     },
   },
   plugins: [require("daisyui")],
