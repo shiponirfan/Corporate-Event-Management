@@ -1,0 +1,74 @@
+[
+  {
+    "id": 1,
+    "name": "Conferences and Seminars",
+    "image": "https://i.ibb.co/3Cxm94v/Conferences-and-Seminars.jpg",
+    "price": 500,
+    "description": "Elevate your conferences and seminars to the next level by choosing our exceptional event services. Our state-of-the-art facilities are designed to accommodate up to 200 participants, ensuring a comfortable and productive environment for your attendees. Whether you're hosting industry conferences, educational seminars, or business meetings, our experienced team will assist you in planning and executing a flawless event.\n\nOur conference and seminar services include high-quality audiovisual equipment, customizable seating arrangements, catering options, and dedicated event coordination. With a 4.5-star average review rating, you can trust us to deliver a memorable experience. Contact us to book this service for your next event, and our next availability is on November 15, 2023.",
+    "seatNumber": 200,
+    "bookingDetails": "Contact us to book this service.",
+    "reviewRating": 4.5,
+    "nextAvailability": "15 November 2023",
+    "reviews": "300 Reviews"
+  },
+  {
+    "id": 2,
+    "name": "Trade Shows and Expos",
+    "image": "https://i.ibb.co/FKDX3Wr/Trade-Shows-and-Expos.jpg",
+    "price": 800,
+    "description": "Make a lasting impression at trade shows and expos with our premium event services. Showcase your products and services in style with our spacious exhibition halls, accommodating up to 300 visitors. Our team specializes in creating engaging and visually stunning displays that will attract attention and drive traffic to your booth.\n\nOur trade show and expo services also include logistical support, booth design, promotional materials, and on-site assistance. With a 4.2-star average review rating, our commitment to excellence is evident. Contact us to secure your spot at an upcoming event, with the next availability on December 10, 2023.",
+    "seatNumber": 300,
+    "bookingDetails": "Contact us to book this service.",
+    "reviewRating": 4.2,
+    "nextAvailability": "10 December 2023",
+    "reviews": "150 Reviews"
+  },
+  {
+    "id": 3,
+    "name": "Team Building Workshops",
+    "image": "https://i.ibb.co/02Hqvc9/Team-Building-Workshops.jpg",
+    "price": 300,
+    "description": "Foster camaraderie and enhance teamwork within your organization through our engaging team building workshops. Our intimate setting is perfect for groups of up to 50 participants, ensuring personalized attention and meaningful interactions. Our experienced facilitators will guide your team through a series of dynamic activities and exercises designed to improve communication, problem-solving, and morale.\n\nOur team building services also include customizable workshop themes, catering options, and post-workshop analysis. With a stellar 4.8-star average review rating, we're your trusted partner in team development. Contact us to schedule your workshop, with the next availability on January 5, 2024.",
+    "seatNumber": 50,
+    "bookingDetails": "Contact us to book this service.",
+    "reviewRating": 4.8,
+    "nextAvailability": "05 January 2024",
+    "reviews": "120 Reviews"
+  },
+  {
+    "id": 4,
+    "name": "Product Launches",
+    "image": "https://i.ibb.co/sWbJgNp/Product-Launches.jpg",
+    "price": 1000,
+    "description": "Unveil your latest products with style and impact using our comprehensive product launch services. Our event planning expertise ensures a seamless and memorable launch event. Our venue can accommodate up to 150 guests, providing an exclusive atmosphere for your product reveal.\n\nOur product launch services include event design, marketing support, multimedia presentations, and catering options. With a remarkable 4.7-star average review rating, your product launch is in good hands. Contact us to discuss your launch event, with the next availability on November 25, 2023.",
+    "seatNumber": 150,
+    "bookingDetails": "Contact us to book this service.",
+    "reviewRating": 4.7,
+    "nextAvailability": "25 November 2023",
+    "reviews": "230 Reviews"
+  },
+  {
+    "id": 5,
+    "name": "Corporate Meetings",
+    "image": "https://i.ibb.co/S6JgPwk/Corporate-Meetings.jpg",
+    "price": 400,
+    "description": "Host your corporate meetings in a professional and efficient setting with our corporate meeting services. Our boardroom can comfortably accommodate up to 30 attendees, providing a focused environment for presentations, discussions, and decision-making. Our dedicated team ensures that all your meeting needs are met, from audiovisual equipment to refreshments.\n\nOur corporate meeting services also include room setup flexibility, technical support, and scheduling assistance. With a solid 4.3-star average review rating, we're the choice for successful corporate gatherings. Contact us to reserve your meeting space, with the next availability on November 8, 2023.",
+    "seatNumber": 30,
+    "bookingDetails": "Contact us to book this service.",
+    "reviewRating": 4.3,
+    "nextAvailability": "08 November 2023",
+    "reviews": "170 Reviews"
+  },
+  {
+    "id": 6,
+    "name": "Award Ceremonies",
+    "image": "https://i.ibb.co/K576Xk7/Award-Ceremonies.jpg",
+    "price": 700,
+    "description": "Celebrate achievements and honor excellence with our distinguished award ceremony services. Our grand venue can accommodate up to 200 guests, offering an elegant and prestigious setting for your ceremony. We specialize in creating memorable experiences that recognize and applaud accomplishments.\n\nOur award ceremony services include event planning, awards presentation, catering options, and audiovisual support. With an impressive 4.6-star average review rating, we ensure that your awards ceremony shines. Contact us to discuss your ceremony requirements, with the next availability on December 20, 2023.",
+    "seatNumber": 200,
+    "bookingDetails": "Contact us to book this service.",
+    "reviewRating": 4.6,
+    "nextAvailability": "20 December 2023",
+    "reviews": "110 Reviews"
+  }
+]
