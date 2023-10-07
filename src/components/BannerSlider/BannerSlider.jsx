@@ -14,30 +14,30 @@ const BannerSlider = () => {
           {/* Background Overlay */}
           <div className="bg-black w-full h-full absolute bg-opacity-80"></div>
           {/* Slider Content */}
-          <div className="absolute flex flex-col space-y-4 items-center justify-center text-white transform -translate-y-1/2 left-0 right-0 top-1/2 z-10">
-            <h2 className="font-bold text-7xl uppercase">
+          <div className="absolute px-6 md:px-8 text-center flex flex-col space-y-4 items-center justify-center text-white transform -translate-y-1/2 left-0 right-0 top-1/2 z-10">
+            <h2 className="font-bold text-xl md:text-4xl lg:text-7xl uppercase">
               We Are Event Professionals
             </h2>
-            <p className="text-lg">
+            <p className="text-sm md:text-base lg:text-lg md:px-20">
               You Can Find Conferences and Seminars,Team Building
               Workshops,Corporate Meetings, Award Ceremonies and more
             </p>
             {/* Slider Button */}
             <div>
               <Link to="/services">
-                <button className="hover:bg-corporate-color border-corporate-color duration-300 border-2 mx-3 py-3 font-medium px-8 rounded-lg">
+                <button className="hover:bg-corporate-color mb-4 md:mb-0 border-corporate-color duration-300 border-2 mx-3 py-3 font-medium px-8 rounded-lg">
                   Our Services
                 </button>
               </Link>
               <Link to="/about">
-                <button className="hover:bg-corporate-color border-corporate-color duration-300 border-2 mx-3 py-3 font-medium px-8 rounded-lg">
+                <button className="hover:bg-corporate-color mb-4 md:mb-0 border-corporate-color duration-300 border-2 mx-3 py-3 font-medium px-8 rounded-lg">
                   About Us
                 </button>
               </Link>
             </div>
           </div>
           {/* Slider Arrow */}
-          <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2 z-20">
+          <div className="absolute hidden lg:flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2 z-20">
             <a href="#slide3" className="btn btn-circle">
               ❮
             </a>
@@ -56,34 +56,34 @@ const BannerSlider = () => {
           {/* Background Overlay */}
           <div className="bg-black w-full h-full absolute bg-opacity-80"></div>
           {/* Slider Content */}
-          <div className="absolute flex flex-col space-y-4 items-center justify-center text-white transform -translate-y-1/2 left-0 right-0 top-1/2 z-10">
-            <h2 className="font-bold text-7xl uppercase">
+          <div className="absolute px-6 md:px-8 text-center flex flex-col space-y-4 items-center justify-center text-white transform -translate-y-1/2 left-0 right-0 top-1/2 z-10">
+            <h2 className="font-bold text-xl md:text-4xl lg:text-7xl uppercase">
               We Are Event Professionals
             </h2>
-            <p className="text-lg">
+            <p className="text-sm md:text-base lg:text-lg md:px-20">
               You Can Find Conferences and Seminars,Team Building
               Workshops,Corporate Meetings, Award Ceremonies and more
             </p>
             {/* Slider Button */}
             <div>
               <Link to="/services">
-                <button className="hover:bg-corporate-color border-corporate-color duration-300 border-2 mx-3 py-3 font-medium px-8 rounded-lg">
+                <button className="hover:bg-corporate-color mb-4 md:mb-0 border-corporate-color duration-300 border-2 mx-3 py-3 font-medium px-8 rounded-lg">
                   Our Services
                 </button>
               </Link>
               <Link to="/about">
-                <button className="hover:bg-corporate-color border-corporate-color duration-300 border-2 mx-3 py-3 font-medium px-8 rounded-lg">
+                <button className="hover:bg-corporate-color mb-4 md:mb-0 border-corporate-color duration-300 border-2 mx-3 py-3 font-medium px-8 rounded-lg">
                   About Us
                 </button>
               </Link>
             </div>
           </div>
           {/* Slider Arrow */}
-          <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2 z-20">
-            <a href="#slide1" className="btn btn-circle">
+          <div className="absolute hidden lg:flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2 z-20">
+            <a href="#slide3" className="btn btn-circle">
               ❮
             </a>
-            <a href="#slide3" className="btn btn-circle">
+            <a href="#slide2" className="btn btn-circle">
               ❯
             </a>
           </div>
@@ -98,34 +98,34 @@ const BannerSlider = () => {
           {/* Background Overlay */}
           <div className="bg-black w-full h-full absolute bg-opacity-80"></div>
           {/* Slider Content */}
-          <div className="absolute flex flex-col space-y-4 items-center justify-center text-white transform -translate-y-1/2 left-0 right-0 top-1/2 z-10">
-            <h2 className="font-bold text-7xl uppercase">
+          <div className="absolute px-6 md:px-8 text-center flex flex-col space-y-4 items-center justify-center text-white transform -translate-y-1/2 left-0 right-0 top-1/2 z-10">
+            <h2 className="font-bold text-xl md:text-4xl lg:text-7xl uppercase">
               We Are Event Professionals
             </h2>
-            <p className="text-lg">
+            <p className="text-sm md:text-base lg:text-lg md:px-20">
               You Can Find Conferences and Seminars,Team Building
               Workshops,Corporate Meetings, Award Ceremonies and more
             </p>
             {/* Slider Button */}
             <div>
               <Link to="/services">
-                <button className="hover:bg-corporate-color border-corporate-color duration-300 border-2 mx-3 py-3 font-medium px-8 rounded-lg">
+                <button className="hover:bg-corporate-color mb-4 md:mb-0 border-corporate-color duration-300 border-2 mx-3 py-3 font-medium px-8 rounded-lg">
                   Our Services
                 </button>
               </Link>
               <Link to="/about">
-                <button className="hover:bg-corporate-color border-corporate-color duration-300 border-2 mx-3 py-3 font-medium px-8 rounded-lg">
+                <button className="hover:bg-corporate-color mb-4 md:mb-0 border-corporate-color duration-300 border-2 mx-3 py-3 font-medium px-8 rounded-lg">
                   About Us
                 </button>
               </Link>
             </div>
           </div>
           {/* Slider Arrow */}
-          <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2 z-20">
-            <a href="#slide2" className="btn btn-circle">
+          <div className="absolute hidden lg:flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2 z-20">
+            <a href="#slide3" className="btn btn-circle">
               ❮
             </a>
-            <a href="#slide1" className="btn btn-circle">
+            <a href="#slide2" className="btn btn-circle">
               ❯
             </a>
           </div>

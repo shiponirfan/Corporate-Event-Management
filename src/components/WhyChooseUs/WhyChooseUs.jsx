@@ -1,21 +1,21 @@
 const WhyChooseUs = () => {
   return (
-    <div className="pb-24 pt-10 container mx-auto">
+    <div className="pb-16 xl:pb-24 pt-10 px-6 md:px-8 container mx-auto">
       <div className="text-center mb-14">
-        <h2 className="text-5xl font-bold mb-4">
+        <h2 className="text-4xl md:text-5xl font-bold mb-4">
           Why
           <span className="text-corporate-color"> Choose Us</span>
         </h2>
         <p>Discover the Reasons to Partner with Our Event Services</p>
       </div>
-      <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
+      <div className="grid md:grid-cols-2 xl:grid-cols-3 gap-10">
         <div className="card hover:bg-corporate-color hover:text-white duration-300 card-side bg-base-100 p-8 border-2 rounded-lg">
           <div className="">
             <span className="text-xl font-medium border-2 border-white bg-corporate-color  w-10 h-10 flex justify-center items-center text-white  rounded-full">
               01
             </span>
           </div>
-          <div className="px-8">
+          <div className="pl-8">
             <h2 className="font-bold text-xl">Multiple Events</h2>
             <p>
               Seamlessly manage and host multiple events under one platform,
@@ -29,7 +29,7 @@ const WhyChooseUs = () => {
               02
             </span>
           </div>
-          <div className="px-8">
+          <div className="pl-8">
             <h2 className="font-bold text-xl">Event Management</h2>
             <p>
               Take control of every aspect of your event, from planning to
@@ -43,7 +43,7 @@ const WhyChooseUs = () => {
               03
             </span>
           </div>
-          <div className="px-8">
+          <div className="pl-8">
             <h2 className="font-bold text-xl">Credit Card Payment</h2>
             <p>
               Offer convenient payment options with secure credit card
@@ -57,7 +57,7 @@ const WhyChooseUs = () => {
               04
             </span>
           </div>
-          <div className="px-8">
+          <div className="pl-8">
             <h2 className="font-bold text-xl">Venue Management</h2>
             <p>
               Effortlessly handle venue logistics, ensuring that your events run
@@ -71,7 +71,7 @@ const WhyChooseUs = () => {
               05
             </span>
           </div>
-          <div className="px-8">
+          <div className="pl-8">
             <h2 className="font-bold text-xl">Free Registration Management</h2>
             <p>
               Simplify the process of handling registrations, whether they{`'`}
@@ -85,7 +85,7 @@ const WhyChooseUs = () => {
               06
             </span>
           </div>
-          <div className="px-8">
+          <div className="pl-8">
             <h2 className="font-bold text-xl">Easy To Use</h2>
             <p>
               Our platform is designed for simplicity, making it easy for both

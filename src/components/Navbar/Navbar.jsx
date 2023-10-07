@@ -20,24 +20,44 @@ const Navbar = () => {
         </NavLink>
       </li>
       <li className="mx-8 hover:text-corporate-color">
-        <NavLink to="/services" className={({ isActive, isPending }) =>
+        <NavLink
+          to="/services"
+          className={({ isActive, isPending }) =>
             isPending ? "pending" : isActive ? "text-corporate-color" : ""
-          }>Services</NavLink>
+          }
+        >
+          Services
+        </NavLink>
       </li>
       <li className="mx-8 hover:text-corporate-color">
-        <NavLink to="/about" className={({ isActive, isPending }) =>
+        <NavLink
+          to="/about"
+          className={({ isActive, isPending }) =>
             isPending ? "pending" : isActive ? "text-corporate-color" : ""
-          }>About Us</NavLink>
+          }
+        >
+          About Us
+        </NavLink>
       </li>
       <li className="mx-8 hover:text-corporate-color">
-        <NavLink to="/contact" className={({ isActive, isPending }) =>
+        <NavLink
+          to="/contact"
+          className={({ isActive, isPending }) =>
             isPending ? "pending" : isActive ? "text-corporate-color" : ""
-          }>Contact Us</NavLink>
+          }
+        >
+          Contact Us
+        </NavLink>
       </li>
       <li className="mx-8 hover:text-corporate-color">
-        <NavLink to="/blog" className={({ isActive, isPending }) =>
+        <NavLink
+          to="/blog"
+          className={({ isActive, isPending }) =>
             isPending ? "pending" : isActive ? "text-corporate-color" : ""
-          }>Blog</NavLink>
+          }
+        >
+          Blog
+        </NavLink>
       </li>
     </>
   );
@@ -45,10 +65,10 @@ const Navbar = () => {
     <>
       {/* Top Navbar */}
       <div className="bg-corporate-lightColor py-3">
-        <div className="flex px-2 container mx-auto justify-between items-center">
+        <div className="flex flex-col text-center md:text-left md:flex-row px-6 md:px-8 container mx-auto justify-between items-center">
           <h4>Our Business Hours starts From 8AM to 8PM (Friday Holiday)</h4>
           {/* Social Icons */}
-          <div className="flex gap-3 text-lg">
+          <div className="flex gap-3 text-lg mt-3 md:mt-0">
             <a href="https://www.facebook.com/ShiponIrfan/">
               <FaFacebook />
             </a>
@@ -69,9 +89,9 @@ const Navbar = () => {
       </div>
       {/* Navbar */}
       <div className="bg-white py-2">
-        <div className="navbar justify-between container mx-auto">
+        <div className="navbar justify-between md:px-8 container mx-auto">
           <div>
-            <div className="dropdown">
+            <div className="dropdown z-50">
               <label tabIndex={0} className="btn btn-ghost lg:hidden">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -106,10 +126,12 @@ const Navbar = () => {
           </div>
           <div>
             <div className="hidden lg:flex">
-              <ul className="menu-horizontal text-base font-medium">{navMenu}</ul>
+              <ul className="menu-horizontal text-base font-medium">
+                {navMenu}
+              </ul>
             </div>
             <div className="flex gap-4 items-center">
-              <div className="dropdown dropdown-end">
+              <div className="dropdown z-50 dropdown-end">
                 <label tabIndex={0} className="btn btn-ghost btn-circle avatar">
                   <div className="w-10 rounded-full">
                     <img src="/images/user.png" />
@@ -133,9 +155,13 @@ const Navbar = () => {
                   </li>
                 </ul>
               </div>
-              <Link to="/login"><button className="bg-corporate-color py-3 font-medium px-8 hover:bg-black duration-300 rounded-lg text-white">
-                Login
-              </button></Link>
+              <div className="hidden md:block">
+                <Link to="/login">
+                  <button className="bg-corporate-color py-3 font-medium px-8 hover:bg-black duration-300 rounded-lg text-white">
+                    Login
+                  </button>
+                </Link>
+              </div>
             </div>
           </div>
         </div>

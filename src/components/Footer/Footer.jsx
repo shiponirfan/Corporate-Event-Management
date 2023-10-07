@@ -4,9 +4,9 @@ import { Link } from "react-router-dom";
 const Footer = () => {
   return (
     <div className="bg-footer-bg bg-cover bg-no-repeat bg-center">
-      <div className="hero-overlay bg-opacity-60 py-24 text-white">
+      <div className="hero-overlay bg-opacity-60 xl:py-24  text-white">
         <footer className=" container mx-auto p-10 ">
-            <div className="flex justify-between items-center py-8 mb-12 border-b">
+            <div className="flex flex-col md:flex-row justify-between items-center py-8 mb-12 border-b">
             <Link to="/">
               <h4 className="flex flex-col text-lg">
                 <span className="uppercase font-bold text-[26px]">
@@ -15,7 +15,7 @@ const Footer = () => {
                 Event Management
               </h4>
             </Link>
-            <div className="flex justify-between items-center gap-6">
+            <div className="flex justify-between items-center mt-6 md:mt-0 gap-6">
                 <h3>Have Any Questions?</h3>
                 <Link to="/contact"><button className="bg-corporate-color py-3 font-medium px-8 hover:bg-black duration-300 rounded-lg text-white">
                 Contact Us
@@ -53,17 +53,17 @@ const Footer = () => {
                 <input
                   type="text"
                   placeholder="username@site.com"
-                  className="input input-bordered w-full pr-16 text-black"
+                  className="input input-bordered md:w-full md:pr-16 text-black"
                 />
-                <button className="btn bg-corporate-color text-white  hover:bg-blue-600 border-none absolute top-0 right-0 rounded-l-none">
+                <button className="btn p-2 md:px-4 bg-corporate-color text-white  hover:bg-blue-600 border-none absolute top-0 right-14 md:right-0 rounded-l-none">
                   Subscribe
                 </button>
               </div>
             </fieldset>
           </form>
           </div>
-          <div className="flex container mx-auto justify-between items-center py-8 mt-12 border-t">
-          <h4 className="flex justify-between items-center gap-2"><FaRegCopyright/> 2023 Corporate Event Management. All rights reserved.</h4>
+          <div className="flex flex-col md:flex-row container mx-auto justify-between items-center py-8 mt-12 border-t">
+          <h4 className="flex justify-between text-xs mb-4 md:mb-0 md:text-base items-center gap-2"><FaRegCopyright/> 2023 Corporate Event Management. All rights reserved.</h4>
           {/* Social Icons */}
           <div className="flex gap-3 text-lg">
             <a href="https://www.facebook.com/ShiponIrfan/">

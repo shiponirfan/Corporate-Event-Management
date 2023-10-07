@@ -27,7 +27,7 @@ const ServiceCard = ({ service }) => {
       <figure>
         <img src={image} alt={`image of ${name}`} />
       </figure>
-      <div className="card-body">
+      <div className="card-body p-6 xl:p-8">
         <div className="flex justify-between items-center">
           <div>
             <span className="bg-corporate-color text-white p-1 rounded mr-2">
@@ -46,20 +46,20 @@ const ServiceCard = ({ service }) => {
             )}
           </div>
         </div>
-        <h2 className="text-2xl font-bold">{name}</h2>
-        <p className="text-base mb-1">{`${description.slice(0, 150)}...`}</p>
-        <p className="flex items-center gap-1 text-lg font-medium">
+        <h2 className="text-xl xl:text-2xl font-bold">{name}</h2>
+        <p className="text-sm xl:text-base mb-1">{`${description.slice(0, 150)}...`}</p>
+        <p className="flex items-center gap-1 text-sm xl:text-lg font-medium">
           <FaRegCalendarAlt /> Next Availablity:{" "}
           <span className="text-corporate-color font-bold ml-1">
             {nextAvailability}
           </span>
         </p>
-        <div className="flex justify-between items-center">
-          <p className="flex items-center gap-1 text-lg font-medium">
+        <div className="flex justify-between gap-2 items-center">
+          <p className="flex items-center gap-1 text-sm xl:text-lg font-medium">
             <FaRegMoneyBillAlt /> Price:{" "}
             <span className="text-corporate-color font-bold ml-1">{`${price}$`}</span>
           </p>
-          <p className=" flex items-center justify-end gap-1 text-lg font-medium">
+          <p className=" flex items-center justify-end gap-1 text-sm xl:text-lg font-medium">
             <FaSitemap /> Seat Available:{" "}
             <span className="text-corporate-color font-bold ml-1">
               {seatNumber}

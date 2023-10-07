@@ -9,13 +9,13 @@ const Services = () => {
       .then((data) => setServices(data));
   }, []);
   return (
-    <div className="py-24 container mx-auto">
+    <div className="lg:py-24 py-10 px-6 md:px-8 container mx-auto">
       <div className="text-center mb-14">
-        <h2 className="text-3xl font-bold mb-4">
+        <h2 className="text-xl md:text-3xl font-bold mb-4">
           Discover Our Premier{" "}
           <span className="text-corporate-color">Event Services</span>
         </h2>
-        <p className="w-1/2 px-10 mx-auto">
+        <p className="2xl:w-1/2 md:px-10 mx-auto">
         Unleash Unforgettable Events with Our Premier Services. Elevate Your Experiences with Expertise and Precision. From Grand Conferences to Intimate Gatherings, We Craft Exceptional Moments. Discover Excellence.
         </p>
       </div>

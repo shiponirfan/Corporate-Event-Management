@@ -18,6 +18,7 @@ export default {
       },
       backgroundImage: {
         'footer-bg': "url('/images/banner/banner2.jpg')",
+        'cta-bg': "url('/images/banner/banner4.jpg')",
       },
     },
   },
