@@ -1,9 +1,10 @@
 import { Outlet } from "react-router-dom";
+import Navbar from "../components/Navbar/Navbar";
 
 const MainLayout = () => {
     return (
-        <div>
-            <h2>Main Layout</h2>
+        <div className="font-figtree">
+            <Navbar></Navbar>
             <Outlet></Outlet>
         </div>
     );
