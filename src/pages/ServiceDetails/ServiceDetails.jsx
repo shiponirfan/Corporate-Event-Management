@@ -1,5 +1,6 @@
 import { useLoaderData, useParams } from "react-router-dom";
 import { useEffect, useState } from "react";
+import Swal from "sweetalert2";
 import {
   FaHeart,
   FaRegCalendarAlt,
@@ -11,6 +12,7 @@ import { Link } from "react-router-dom";
 import CallToAction from "../../components/CallToAction/CallToAction";
 import MarqueeSlider from "../../components/MarqueeSlider/MarqueeSlider";
 import Testimonial from "../../components/Testimonial/Testimonial";
+import Breadcrumbs from "../../components/Breadcrumbs/Breadcrumbs";
 const ServiceDetails = () => {
   function ScrollToTopOnMount() {
     useEffect(() => {
@@ -34,10 +36,44 @@ const ServiceDetails = () => {
     reviews,
   } = serviceDetails;
 
+  const breadCrumbs = (
+    <>
+      <li>
+        <Link to="/services">Services</Link>
+      </li>
+      <li>{name}</li>
+    </>
+  );
+  const [booked, setBooked] = useState(false);
+  const handleBookNowBtn = () => {
+    if (booked) {
+      Swal.fire({
+        title: "Already Booked",
+        text: "Thank You For The Booking!",
+        icon: "warning",
+        confirmButtonText: "Go Back",
+        buttonsStyling: false,
+      });
+    } else {
+      Swal.fire({
+        title: "Successfully Booking Done",
+        text: "Thank You For The Booking!",
+        icon: "success",
+        confirmButtonText: "Go Back",
+        buttonsStyling: false,
+      });
+      setBooked(true);
+    }
+  };
   return (
     <div>
       <ScrollToTopOnMount />
-      <div className="container mx-auto pb-20 grid grid-cols-4 gap-8">
+      <Breadcrumbs
+        image={image}
+        name={name}
+        breadCrumbs={breadCrumbs}
+      ></Breadcrumbs>
+      <div className="container mx-auto py-24 grid grid-cols-4 gap-8">
         <div className="col-span-3">
           <figure>
             <img className="rounded-lg" src={image} alt={`image of ${name}`} />
@@ -109,11 +145,12 @@ const ServiceDetails = () => {
           </p>
 
           <div className="border-t-2 pt-4 mt-4">
-            <Link to={`/service/${id}`}>
-              <button className="w-full bg-corporate-color text-white font-medium text-xl hover:bg-black duration-300 py-4 rounded-lg">
-                Book Now
-              </button>
-            </Link>
+            <button
+              onClick={handleBookNowBtn}
+              className="w-full bg-corporate-color text-white font-medium text-xl hover:bg-black duration-300 py-4 rounded-lg"
+            >
+              Book Now
+            </button>
           </div>
         </div>
       </div>

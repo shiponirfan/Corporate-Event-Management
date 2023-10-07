@@ -2,6 +2,9 @@ import { createBrowserRouter } from "react-router-dom";
 import MainLayout from "../layout/MainLayout";
 import Home from "../pages/Home/Home";
 import ServiceDetails from "../pages/ServiceDetails/ServiceDetails";
+import ServicesPage from "../pages/ServicesPage/ServicesPage";
+import AboutUs from "../pages/AboutUs/AboutUs";
+import ContactUs from "../pages/ContactUs/ContactUs";
 
 const routes = createBrowserRouter([
     {
@@ -16,6 +19,22 @@ const routes = createBrowserRouter([
                 path: '/service/:id',
                 loader: ()=> fetch('/services.json'),
                 element: <ServiceDetails></ServiceDetails>
+            },
+            {
+                path: '/services',
+                element: <ServicesPage></ServicesPage>
+            },
+            {
+                path: '/about',
+                element: <AboutUs></AboutUs>
+            },
+            {
+                path: '/contact',
+                element: <ContactUs></ContactUs>
+            },
+            {
+                path: '/blog',
+                element: <h2>Blog Page Comming Soon</h2>
             },
         ],
     },
