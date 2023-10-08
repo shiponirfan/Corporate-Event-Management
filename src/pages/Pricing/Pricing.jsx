@@ -40,12 +40,14 @@ const Pricing = () => {
         name={"Pricing Plans"}
         breadCrumbs={breadCrumbs}
       ></Breadcrumbs>
-      <div className="container mx-auto pb-20">
-        <div className="text-center w-1/2 mx-auto space-y-3 my-16">
+      <div className="container mx-auto pb-10 lg:pb-20 px-6 md:px-8">
+        <div className="text-center lg:w-3/4 xl:w-1/2 mx-auto space-y-3 my-10 lg:my-16">
           <h2 className="text-xl uppercase text-corporate-color font-medium">
             Pricing Plans
           </h2>
-          <h2 className="text-5xl font-bold">Cost-Effective Pricing</h2>
+          <h2 className="text-3xl md:text-5xl font-bold">
+            Cost-Effective Pricing
+          </h2>
           <p>
             At Corporate Event Management, we offer budget-friendly event
             planning. Our competitive pricing ensures quality without breaking
@@ -54,7 +56,7 @@ const Pricing = () => {
             budget.
           </p>
         </div>
-        <div className="grid grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5 xl:gap-8">
           {/* Package 1 */}
           <div className="relative flex w-full flex-col rounded-xl bg-gradient-to-tr from-corporate-color to-blue-600 bg-clip-border p-8 text-white shadow-md shadow-blue-500/40">
             <div className="relative m-0 mb-8 overflow-hidden rounded-none border-b border-white/10 bg-transparent bg-clip-border pb-8 text-center text-gray-700 shadow-none">
@@ -229,7 +231,7 @@ const Pricing = () => {
             </div>
             <div className="mt-12 p-0">
               <button
-              onClick={handleBookNowBtn}
+                onClick={handleBookNowBtn}
                 className="block w-full select-none rounded-lg bg-white py-3.5 px-7 text-center align-middle font-sans text-sm font-bold uppercase text-corporate-color shadow-md shadow-blue-gray-500/10 transition-all hover:scale-[1.02] hover:shadow-lg hover:shadow-blue-gray-500/20 focus:scale-[1.02] focus:opacity-[0.85] focus:shadow-none active:scale-100 active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
                 type="button"
                 data-ripple-dark="true"
@@ -298,28 +300,7 @@ const Pricing = () => {
                     Venue selection and negotiation
                   </p>
                 </li>
-                <li className="flex items-center gap-4">
-                  <span className="rounded-full border border-white/20 bg-white/20 p-1">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      strokeWidth="2"
-                      stroke="currentColor"
-                      aria-hidden="true"
-                      className="h-3 w-3"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        d="M4.5 12.75l6 6 9-13.5"
-                      ></path>
-                    </svg>
-                  </span>
-                  <p className="block font-sans text-base font-normal leading-relaxed text-inherit antialiased">
-                    Detailed event planning and coordination
-                  </p>
-                </li>
+
                 <li className="flex items-center gap-4">
                   <span className="rounded-full border border-white/20 bg-white/20 p-1">
                     <svg
@@ -456,7 +437,7 @@ const Pricing = () => {
             </div>
             <div className="mt-12 p-0">
               <button
-              onClick={handleBookNowBtn}
+                onClick={handleBookNowBtn}
                 className="block w-full select-none rounded-lg bg-white py-3.5 px-7 text-center align-middle font-sans text-sm font-bold uppercase text-corporate-color shadow-md shadow-blue-gray-500/10 transition-all hover:scale-[1.02] hover:shadow-lg hover:shadow-blue-gray-500/20 focus:scale-[1.02] focus:opacity-[0.85] focus:shadow-none active:scale-100 active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
                 type="button"
                 data-ripple-dark="true"
@@ -479,7 +460,7 @@ const Pricing = () => {
                 Large corporations and high-profile events
               </p>
             </div>
-            <div className="p-0">
+            <div className="p-0 grow">
               <ul className="flex flex-col gap-4">
                 <li className="flex items-center gap-4">
                   <span className="rounded-full border border-white/20 bg-white/20 p-1">
@@ -522,54 +503,10 @@ const Pricing = () => {
                     </svg>
                   </span>
                   <p className="block font-sans text-base font-normal leading-relaxed text-inherit antialiased">
-                    Premium venue selection and exclusive negotiations
-                  </p>
-                </li>
-                <li className="flex items-center gap-4">
-                  <span className="rounded-full border border-white/20 bg-white/20 p-1">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      strokeWidth="2"
-                      stroke="currentColor"
-                      aria-hidden="true"
-                      className="h-3 w-3"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        d="M4.5 12.75l6 6 9-13.5"
-                      ></path>
-                    </svg>
-                  </span>
-                  <p className="block font-sans text-base font-normal leading-relaxed text-inherit antialiased">
                     Full-service event planning and coordination
                   </p>
                 </li>
-                <li className="flex items-center gap-4">
-                  <span className="rounded-full border border-white/20 bg-white/20 p-1">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      strokeWidth="2"
-                      stroke="currentColor"
-                      aria-hidden="true"
-                      className="h-3 w-3"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        d="M4.5 12.75l6 6 9-13.5"
-                      ></path>
-                    </svg>
-                  </span>
-                  <p className="block font-sans text-base font-normal leading-relaxed text-inherit antialiased">
-                    Vendor management, contract negotiations, and premium vendor
-                    recommendations
-                  </p>
-                </li>
+
                 <li className="flex items-center gap-4">
                   <span className="rounded-full border border-white/20 bg-white/20 p-1">
                     <svg
@@ -592,28 +529,7 @@ const Pricing = () => {
                     On-site event management (full day)
                   </p>
                 </li>
-                <li className="flex items-center gap-4">
-                  <span className="rounded-full border border-white/20 bg-white/20 p-1">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      strokeWidth="2"
-                      stroke="currentColor"
-                      aria-hidden="true"
-                      className="h-3 w-3"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        d="M4.5 12.75l6 6 9-13.5"
-                      ></path>
-                    </svg>
-                  </span>
-                  <p className="block font-sans text-base font-normal leading-relaxed text-inherit antialiased">
-                    Custom event timeline creation with advanced logistics
-                  </p>
-                </li>
+
                 <li className="flex items-center gap-4">
                   <span className="rounded-full border border-white/20 bg-white/20 p-1">
                     <svg
@@ -728,7 +644,7 @@ const Pricing = () => {
             </div>
             <div className="mt-12 p-0">
               <button
-              onClick={handleBookNowBtn}
+                onClick={handleBookNowBtn}
                 className="block w-full select-none rounded-lg bg-white py-3.5 px-7 text-center align-middle font-sans text-sm font-bold uppercase text-corporate-color shadow-md shadow-blue-gray-500/10 transition-all hover:scale-[1.02] hover:shadow-lg hover:shadow-blue-gray-500/20 focus:scale-[1.02] focus:opacity-[0.85] focus:shadow-none active:scale-100 active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
                 type="button"
                 data-ripple-dark="true"

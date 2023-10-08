@@ -25,15 +25,17 @@ const Dashboard = () => {
   };
   return (
     <div>
-      <div className="hero min-h-screen bg-corporate-lightColor">
-        <div className="hero-content flex-col lg:flex-row">
+      <div className="hero min-h-screen  bg-corporate-lightColor">
+        <div className="hero-content  flex-col lg:flex-row">
           <img
             src={user?.photoURL}
-            className="max-w-sm rounded-lg shadow-2xl"
+            className="max-w-[250px] lg:max-w-sm rounded-lg shadow-2xl"
           />
           <div>
-            <h1 className="text-5xl font-bold">{user?.displayName}</h1>
-            <p className="py-6 text-5xl">{user?.email}</p>
+            <h1 className="text-2xl lg:text-5xl font-bold">
+              {user?.displayName}
+            </h1>
+            <p className="py-6 text-2xl lg:text-5xl">{user?.email}</p>
             <button
               onClick={handleLogoutBtn}
               className="bg-corporate-color py-3 font-medium px-8 hover:bg-black duration-300 rounded-lg text-white"

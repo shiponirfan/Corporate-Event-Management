@@ -37,7 +37,7 @@ const Navbar = () => {
   // Nav Menu
   const navMenu = (
     <>
-      <li className="mx-8 hover:text-corporate-color">
+      <li className="mx-4 xl:mx-8 hover:text-corporate-color">
         <NavLink
           to="/"
           className={({ isActive, isPending }) =>
@@ -47,7 +47,7 @@ const Navbar = () => {
           Home
         </NavLink>
       </li>
-      <li className="mx-8 hover:text-corporate-color">
+      <li className="mx-4 xl:mx-8 hover:text-corporate-color">
         <NavLink
           to="/services"
           className={({ isActive, isPending }) =>
@@ -57,7 +57,7 @@ const Navbar = () => {
           Services
         </NavLink>
       </li>
-      <li className="mx-8 hover:text-corporate-color">
+      <li className="mx-4 xl:mx-8 hover:text-corporate-color">
         <NavLink
           to="/pricing"
           className={({ isActive, isPending }) =>
@@ -67,7 +67,7 @@ const Navbar = () => {
           Pricing
         </NavLink>
       </li>
-      <li className="mx-8 hover:text-corporate-color">
+      <li className="mx-4 xl:mx-8 hover:text-corporate-color">
         <NavLink
           to="/blogs"
           className={({ isActive, isPending }) =>
@@ -77,7 +77,7 @@ const Navbar = () => {
           Blogs
         </NavLink>
       </li>
-      <li className="mx-8 hover:text-corporate-color">
+      <li className="mx-4 xl:mx-8 hover:text-corporate-color">
         <NavLink
           to="/about"
           className={({ isActive, isPending }) =>
@@ -87,7 +87,7 @@ const Navbar = () => {
           About Us
         </NavLink>
       </li>
-      <li className="mx-8 hover:text-corporate-color">
+      <li className="mx-4 xl:mx-8 hover:text-corporate-color">
         <NavLink
           to="/contact"
           className={({ isActive, isPending }) =>
@@ -169,7 +169,7 @@ const Navbar = () => {
               </ul>
             </div>
             <div className="flex gap-4 items-center">
-              <div className="hidden md:block">
+              <div className="">
                 {user ? (
                   <div className="dropdown z-50 dropdown-end">
                     <label
@@ -183,14 +183,16 @@ const Navbar = () => {
                           <img src="/images/user.png" />
                         )}
                       </div>
-                      {user?.displayName ? (
-                        <h2 className="text-base font-bold ml-1">
-                          {user?.displayName}
-                        </h2>
-                      ) : (
-                        <h2 className="text-base font-bold ml-1">Profile</h2>
-                      )}
-                      <BiChevronDown className="text-xl" />
+                      <span className="hidden md:block">
+                        {user?.displayName ? (
+                          <h2 className="text-base font-bold ml-1">
+                            {user?.displayName}
+                          </h2>
+                        ) : (
+                          <h2 className="text-base font-bold ml-1">Profile</h2>
+                        )}
+                      </span>
+                      <BiChevronDown className="text-xl hidden md:block" />
                     </label>
                     <ul
                       tabIndex={0}
@@ -208,12 +210,16 @@ const Navbar = () => {
                       </li>
                       <li>
                         <Link to="/dashboard">
-                          <btn className=" font-medium text-lg">Dashboard</btn>
+                          <button className=" font-medium text-lg">
+                            Dashboard
+                          </button>
                         </Link>
                       </li>
                       <li>
                         <Link to="/settings">
-                          <btn className=" font-medium text-lg">Settings</btn>
+                          <button className=" font-medium text-lg">
+                            Settings
+                          </button>
                         </Link>
                       </li>
                       <li>
@@ -228,7 +234,7 @@ const Navbar = () => {
                   </div>
                 ) : (
                   <Link to="/login">
-                    <button className="bg-corporate-color py-3 font-medium px-8 hover:bg-black duration-300 rounded-lg text-white">
+                    <button className="bg-corporate-color py-3 font-medium px-4 md:px-8 hover:bg-black duration-300 rounded-lg text-white">
                       Login
                     </button>
                   </Link>
@@ -237,6 +243,7 @@ const Navbar = () => {
             </div>
           </div>
         </div>
+
         <ToastContainer />
       </div>
     </>

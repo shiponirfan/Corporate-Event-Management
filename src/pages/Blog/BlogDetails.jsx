@@ -43,8 +43,8 @@ const BlogDetails = () => {
         name={name}
         breadCrumbs={breadCrumbs}
       ></Breadcrumbs>
-      <div className="container mx-auto py-24 grid grid-cols-4 gap-8">
-        <div className="col-span-3">
+      <div className="container mx-auto px-6 md:px-8 xl:px-0 py-16 lg:py-24 grid lg:grid-cols-4 gap-8">
+        <div className="lg:col-span-3">
           <figure>
             <img className="rounded-lg" src={image} alt={`image of ${name}`} />
           </figure>
@@ -53,7 +53,7 @@ const BlogDetails = () => {
             <p className="text-lg xl:text-xl mb-1">{details}</p>
           </div>
         </div>
-        <div className="shadow-lg sticky top-5 rounded-lg max-h-[580px] bg-corporate-lightColor p-4">
+        <div className="shadow-lg rounded-lg bg-corporate-lightColor p-4">
           <figure>
             <img
               className="rounded-lg"
@@ -72,12 +72,12 @@ const BlogDetails = () => {
           <div className="flex justify-between items-center mb-4 border-y-2 py-4 mt-4">
             <div className="flex items-center gap-1 text-sm xl:text-lg mb-2 font-medium">
               <span>Author:</span>
-              <span className="text-xl text-corporate-color font-bold ml-2">
+              <span className="xl:text-xl text-corporate-color font-bold ml-2">
                 {author}
               </span>
             </div>
             <div
-              className="cursor-pointer rounded-full border inline-block p-1 text-xl"
+              className="cursor-pointer rounded-full border inline-block p-1 text-xs xl:text-xl"
               onClick={() => setFavorite(!favorite)}
             >
               {favorite ? (
@@ -88,18 +88,18 @@ const BlogDetails = () => {
             </div>
           </div>
 
-          <p className="flex items-center gap-1 text-sm xl:text-lg mb-2 font-medium">
+          <p className="flex items-center gap-1 text-xs xl:text-lg mb-2 font-medium">
             <FaRegCalendarAlt /> Published Date:{" "}
             <span className="text-corporate-color font-bold ml-1">{date}</span>
           </p>
 
-          <p className=" flex items-center gap-1 text-sm xl:text-lg mb-2 font-medium">
+          <p className=" flex items-center gap-1 text-xs xl:text-lg mb-2 font-medium">
             <FaSitemap /> Categories:{" "}
             <span className="text-corporate-color font-bold ml-1">
               {category}
             </span>
           </p>
-          <p className="flex gap-1 items-start text-sm xl:text-lg font-medium">
+          <p className="flex gap-1 items-start text-xs xl:text-lg font-medium">
             <span className="flex items-center gap-1">
               <FaHashtag /> Tags:
             </span>

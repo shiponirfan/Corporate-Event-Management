@@ -73,8 +73,8 @@ const ServiceDetails = () => {
         name={name}
         breadCrumbs={breadCrumbs}
       ></Breadcrumbs>
-      <div className="container mx-auto py-24 grid grid-cols-4 gap-8">
-        <div className="col-span-3">
+      <div className="container mx-auto px-6 md:px-8 xl:px-0 py-16 lg:py-24 grid lg:grid-cols-4 gap-8">
+        <div className="lg:col-span-3">
           <figure>
             <img className="rounded-lg" src={image} alt={`image of ${name}`} />
           </figure>

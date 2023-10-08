@@ -8,8 +8,8 @@ const Breadcrumbs = ({ image, name, breadCrumbs }) => {
         src={image}
         alt={`image of ${name}`}
       />
-      <div className="bg-black bg-opacity-80 w-full h-full flex flex-col justify-center items-center absolute top-0 left-0 text-white text-center">
-        <h2 className="font-bold text-6xl">{name}</h2>
+      <div className="bg-black bg-opacity-80 px-6 md:px-8 w-full h-full flex flex-col justify-center items-center absolute top-0 left-0 text-white text-center">
+        <h2 className="font-bold text-3xl md:text-4xl lg:text-6xl">{name}</h2>
         <div className="text-sm breadcrumbs">
           <ul>
             <li>
