@@ -1,13 +1,14 @@
 import { useContext } from "react";
 import { FaGoogle, FaLink, FaLock, FaUserCircle } from "react-icons/fa";
 import { MdMail } from "react-icons/md";
-import { Link } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import { AuthContext } from "../../providers/AuthProvider";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 const Register = () => {
   const { signIn, googleLogin, userProfile } = useContext(AuthContext);
-
+  const location = useLocation();
+  const navigate = useNavigate();
   const handleSignIn = (e) => {
     e.preventDefault();
     const name = e.target.name.value;
@@ -48,7 +49,6 @@ const Register = () => {
           return userProfile(name, photoUrl);
         })
         .then(() => {
-          // Profile update completed
           toast.success("Successfully Registered", {
             position: "top-center",
             autoClose: 5000,
@@ -59,6 +59,7 @@ const Register = () => {
             progress: undefined,
             theme: "light",
           });
+          navigate(location?.state ? location.state : "/");
         })
         .catch((error) => {
           console.log(error.message);

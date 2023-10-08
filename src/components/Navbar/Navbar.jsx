@@ -197,10 +197,10 @@ const Navbar = () => {
                         </div>
                       </li>
                       <li>
-                        <a className=" font-medium text-lg">Dashboard</a>
+                        <Link to="/dashboard"><btn className=" font-medium text-lg">Dashboard</btn></Link>
                       </li>
                       <li>
-                        <a className=" font-medium text-lg">Settings</a>
+                      <Link to="/settings"><btn className=" font-medium text-lg">Settings</btn></Link>
                       </li>
                       <li>
                         <a

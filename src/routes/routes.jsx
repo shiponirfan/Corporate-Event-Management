@@ -9,10 +9,14 @@ import Login from "../pages/Login/Login";
 import Register from "../pages/Register/Register";
 import Blog from "../pages/Blog/Blog";
 import PrivateRoutes from "./PrivateRoutes";
+import ErrorPage from "../pages/ErrorPage/ErrorPage";
+import Dashboard from "../pages/Dashboard/Dashboard";
+import Settings from "../pages/Settings/Settings";
 
 const routes = createBrowserRouter([
     {
         path: '/',
+        errorElement: <ErrorPage></ErrorPage>,
         element: <MainLayout></MainLayout>,
         children: [
             {
@@ -47,6 +51,14 @@ const routes = createBrowserRouter([
             {
                 path: '/register',
                 element: <Register></Register>
+            },
+            {
+                path: '/dashboard',
+                element: <PrivateRoutes><Dashboard></Dashboard></PrivateRoutes>
+            },
+            {
+                path: '/settings',
+                element: <PrivateRoutes><Settings></Settings></PrivateRoutes>
             },
         ],
     },
