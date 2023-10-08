@@ -59,6 +59,16 @@ const Navbar = () => {
       </li>
       <li className="mx-8 hover:text-corporate-color">
         <NavLink
+          to="/pricing"
+          className={({ isActive, isPending }) =>
+            isPending ? "pending" : isActive ? "text-corporate-color" : ""
+          }
+        >
+          Pricing
+        </NavLink>
+      </li>
+      <li className="mx-8 hover:text-corporate-color">
+        <NavLink
           to="/blogs"
           className={({ isActive, isPending }) =>
             isPending ? "pending" : isActive ? "text-corporate-color" : ""

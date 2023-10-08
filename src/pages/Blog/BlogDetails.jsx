@@ -105,15 +105,6 @@ const BlogDetails = () => {
             </span>
             <span className="text-corporate-color font-bold ml-1">{tags}</span>
           </p>
-
-          <div className="">
-            {/* <button
-              onClick={handleBookNowBtn}
-              className="w-full bg-corporate-color text-white font-medium text-xl hover:bg-black duration-300 py-4 rounded-lg"
-            >
-              Book Now
-            </button> */}
-          </div>
         </div>
       </div>
       <div>
