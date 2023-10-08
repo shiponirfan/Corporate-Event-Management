@@ -6,12 +6,12 @@ import { AuthContext } from "../../providers/AuthProvider";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 const Register = () => {
-  const { signIn, googleLogin } = useContext(AuthContext);
+  const { signIn, googleLogin, userProfile } = useContext(AuthContext);
 
   const handleSignIn = (e) => {
     e.preventDefault();
     const name = e.target.name.value;
-    const profile = e.target.profile.value;
+    const photoUrl = e.target.profile.value;
     const email = e.target.email.value;
     const password = e.target.password.value;
 
@@ -27,7 +27,7 @@ const Register = () => {
         theme: "light",
       });
     } else if (
-      !/(?=.*[A-Z])(?=.*[!@#$%^&*()_+{}\[\]:;<>,.?~\\-])/.test(password)
+      !/(?=.*[A-Z])(?=.*[!@#$%^&*()_+{}[\]:;<>,.?~\\-])/.test(password)
     ) {
       return toast.warn(
         "Password Must Have One Capital Letter & Special Character",
@@ -45,6 +45,10 @@ const Register = () => {
     } else {
       signIn(email, password)
         .then(() => {
+          return userProfile(name, photoUrl);
+        })
+        .then(() => {
+          // Profile update completed
           toast.success("Successfully Registered", {
             position: "top-center",
             autoClose: 5000,
@@ -62,9 +66,9 @@ const Register = () => {
     }
   };
 
-  const  handleGoogleRegister = ()=>{
+  const handleGoogleRegister = () => {
     googleLogin()
-    .then(() => {
+      .then(() => {
         toast.success("Successfully Registered", {
           position: "top-center",
           autoClose: 5000,
@@ -79,7 +83,7 @@ const Register = () => {
       .catch((error) => {
         console.log(error.message);
       });
-  }
+  };
   return (
     <div className="bg-corporate-lightColor py-24">
       <div className="max-w-4xl mx-auto grid grid-cols-2 gap-8  bg-corporate-color justify-center items-center p-8 rounded-lg ">
@@ -147,7 +151,10 @@ const Register = () => {
             </button>
           </form>
 
-          <button onClick={handleGoogleRegister} className="bg-gradient-to-r hover:from-green-400 hover:to-orange-500 from-pink-500 to-yellow-500 py-3 font-medium w-full px-8 flex items-center justify-center gap-2 hover:bg-slate-900 duration-300 rounded-lg text-white">
+          <button
+            onClick={handleGoogleRegister}
+            className="bg-gradient-to-r hover:from-green-400 hover:to-orange-500 from-pink-500 to-yellow-500 py-3 font-medium w-full px-8 flex items-center justify-center gap-2 hover:bg-slate-900 duration-300 rounded-lg text-white"
+          >
             <FaGoogle /> Register With Google
           </button>
 

@@ -1,4 +1,7 @@
 import { Link, NavLink } from "react-router-dom";
+import { BiChevronDown } from "react-icons/bi";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 import {
   FaFacebook,
   FaInstagram,
@@ -6,7 +9,32 @@ import {
   FaTwitter,
   FaYoutube,
 } from "react-icons/fa";
+import { useContext } from "react";
+import { AuthContext } from "../../providers/AuthProvider";
 const Navbar = () => {
+  const { user, logOut } = useContext(AuthContext);
+
+  // Logout Button
+  const handleLogoutBtn = () => {
+    logOut()
+      .then(() => {
+        toast.success("Logout Successfully", {
+          position: "top-center",
+          autoClose: 5000,
+          hideProgressBar: false,
+          closeOnClick: true,
+          pauseOnHover: true,
+          draggable: true,
+          progress: undefined,
+          theme: "light",
+        });
+      })
+      .catch((error) => {
+        console.log(error.message);
+      });
+  };
+
+  // Nav Menu
   const navMenu = (
     <>
       <li className="mx-8 hover:text-corporate-color">
@@ -131,40 +159,71 @@ const Navbar = () => {
               </ul>
             </div>
             <div className="flex gap-4 items-center">
-              <div className="dropdown z-50 dropdown-end">
-                <label tabIndex={0} className="btn btn-ghost btn-circle avatar">
-                  <div className="w-10 rounded-full">
-                    <img src="/images/user.png" />
-                  </div>
-                </label>
-                <ul
-                  tabIndex={0}
-                  className="mt-3 z-[1] p-2 shadow menu menu-sm dropdown-content bg-base-100 rounded-box w-52"
-                >
-                  <li>
-                    <a className="justify-between">
-                      Profile
-                      <span className="badge">New</span>
-                    </a>
-                  </li>
-                  <li>
-                    <a>Settings</a>
-                  </li>
-                  <li>
-                    <a>Logout</a>
-                  </li>
-                </ul>
-              </div>
               <div className="hidden md:block">
-                <Link to="/login">
-                  <button className="bg-corporate-color py-3 font-medium px-8 hover:bg-black duration-300 rounded-lg text-white">
-                    Login
-                  </button>
-                </Link>
+                {user ? (
+                  <div className="dropdown z-50 dropdown-end">
+                    <label
+                      tabIndex={0}
+                      className="flex justify-center items-center gap-1 avatar  cursor-pointer bg-corporate-color py-3 font-medium px-4 hover:bg-black duration-300 rounded-lg text-white"
+                    >
+                      <div className="w-10 rounded-full ring ring-offset-white ring-offset-2">
+                        {user?.photoURL ? (
+                          <img src={user?.photoURL} />
+                        ) : (
+                          <img src="/images/user.png" />
+                        )}
+                      </div>
+                      {user?.displayName ? (
+                        <h2 className="text-base font-bold ml-1">
+                          {user?.displayName}
+                        </h2>
+                      ) : (
+                        <h2 className="text-base font-bold ml-1">Profile</h2>
+                      )}
+                      <BiChevronDown className="text-xl" />
+                    </label>
+                    <ul
+                      tabIndex={0}
+                      className="mt-3 z-[1] p-2 shadow-lg menu menu-sm dropdown-content bg-corporate-lightColor rounded "
+                    >
+                      <li className="border-b mb-2">
+                        <div className="flex flex-col justify-start items-start py-2 ">
+                          <span className="font-bold text-xl">
+                            {user?.displayName ? user?.displayName : "John Doe"}
+                          </span>
+                          <span className=" font-bold text-base">
+                            {user?.email}
+                          </span>
+                        </div>
+                      </li>
+                      <li>
+                        <a className=" font-medium text-lg">Dashboard</a>
+                      </li>
+                      <li>
+                        <a className=" font-medium text-lg">Settings</a>
+                      </li>
+                      <li>
+                        <a
+                          onClick={handleLogoutBtn}
+                          className=" font-medium text-lg"
+                        >
+                          Logout
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                ) : (
+                  <Link to="/login">
+                    <button className="bg-corporate-color py-3 font-medium px-8 hover:bg-black duration-300 rounded-lg text-white">
+                      Login
+                    </button>
+                  </Link>
+                )}
               </div>
             </div>
           </div>
         </div>
+        <ToastContainer />
       </div>
     </>
   );
