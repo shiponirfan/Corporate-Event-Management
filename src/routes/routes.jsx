@@ -5,6 +5,9 @@ import ServiceDetails from "../pages/ServiceDetails/ServiceDetails";
 import ServicesPage from "../pages/ServicesPage/ServicesPage";
 import AboutUs from "../pages/AboutUs/AboutUs";
 import ContactUs from "../pages/ContactUs/ContactUs";
+import Login from "../pages/Login/Login";
+import Register from "../pages/Register/Register";
+import Blog from "../pages/Blog/Blog";
 
 const routes = createBrowserRouter([
     {
@@ -34,7 +37,15 @@ const routes = createBrowserRouter([
             },
             {
                 path: '/blog',
-                element: <h2>Blog Page Comming Soon</h2>
+                element: <Blog></Blog>
+            },
+            {
+                path: '/login',
+                element: <Login></Login>
+            },
+            {
+                path: '/register',
+                element: <Register></Register>
             },
         ],
     },
