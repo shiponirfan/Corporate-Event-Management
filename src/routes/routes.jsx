@@ -12,6 +12,7 @@ import PrivateRoutes from "./PrivateRoutes";
 import ErrorPage from "../pages/ErrorPage/ErrorPage";
 import Dashboard from "../pages/Dashboard/Dashboard";
 import Settings from "../pages/Settings/Settings";
+import BlogDetails from "../pages/Blog/BlogDetails";
 
 const routes = createBrowserRouter([
     {
@@ -41,8 +42,14 @@ const routes = createBrowserRouter([
                 element: <ContactUs></ContactUs>
             },
             {
-                path: '/blog',
-                element: <Blog></Blog>
+                path: '/blogs',
+                loader: ()=> fetch('/blogs.json'),
+                element: <PrivateRoutes><Blog></Blog></PrivateRoutes>
+            },
+            {
+                path: '/blog/:id',
+                loader: ()=> fetch('/blogs.json'),
+                element: <PrivateRoutes> <BlogDetails></BlogDetails> </PrivateRoutes>
             },
             {
                 path: '/login',

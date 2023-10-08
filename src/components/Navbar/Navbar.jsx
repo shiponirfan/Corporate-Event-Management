@@ -59,6 +59,16 @@ const Navbar = () => {
       </li>
       <li className="mx-8 hover:text-corporate-color">
         <NavLink
+          to="/blogs"
+          className={({ isActive, isPending }) =>
+            isPending ? "pending" : isActive ? "text-corporate-color" : ""
+          }
+        >
+          Blogs
+        </NavLink>
+      </li>
+      <li className="mx-8 hover:text-corporate-color">
+        <NavLink
           to="/about"
           className={({ isActive, isPending }) =>
             isPending ? "pending" : isActive ? "text-corporate-color" : ""
@@ -75,16 +85,6 @@ const Navbar = () => {
           }
         >
           Contact Us
-        </NavLink>
-      </li>
-      <li className="mx-8 hover:text-corporate-color">
-        <NavLink
-          to="/blog"
-          className={({ isActive, isPending }) =>
-            isPending ? "pending" : isActive ? "text-corporate-color" : ""
-          }
-        >
-          Blog
         </NavLink>
       </li>
     </>
@@ -197,10 +197,14 @@ const Navbar = () => {
                         </div>
                       </li>
                       <li>
-                        <Link to="/dashboard"><btn className=" font-medium text-lg">Dashboard</btn></Link>
+                        <Link to="/dashboard">
+                          <btn className=" font-medium text-lg">Dashboard</btn>
+                        </Link>
                       </li>
                       <li>
-                      <Link to="/settings"><btn className=" font-medium text-lg">Settings</btn></Link>
+                        <Link to="/settings">
+                          <btn className=" font-medium text-lg">Settings</btn>
+                        </Link>
                       </li>
                       <li>
                         <a

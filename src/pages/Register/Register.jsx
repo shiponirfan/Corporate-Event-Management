@@ -80,6 +80,7 @@ const Register = () => {
           progress: undefined,
           theme: "light",
         });
+        navigate(location?.state ? location.state : "/");
       })
       .catch((error) => {
         console.log(error.message);
