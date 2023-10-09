@@ -127,7 +127,7 @@ const Navbar = () => {
       </div>
       {/* Navbar */}
       <div className="bg-white py-2">
-        <div className="navbar justify-between md:px-8 container mx-auto">
+        <div className="navbar justify-between pr-6 md:px-8 container mx-auto">
           <div>
             <div className="dropdown z-50">
               <label tabIndex={0} className="btn btn-ghost lg:hidden">

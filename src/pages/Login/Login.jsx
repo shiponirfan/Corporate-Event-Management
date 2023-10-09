@@ -98,14 +98,14 @@ const Login = () => {
       });
   }
   return (
-    <div className="bg-corporate-lightColor py-24">
+    <div className="bg-corporate-lightColor px-6 md:px-8 py-24">
       <Helmet>
         <title>Login | Corporate Event Management</title>
       </Helmet>
-      <div data-aos="fade-up" className="max-w-4xl mx-auto grid grid-cols-2 gap-8  bg-corporate-color justify-center items-center p-8 rounded-lg ">
+      <div data-aos="fade-up" className="max-w-4xl mx-auto grid lg:grid-cols-2 gap-1 lg:gap-8  bg-corporate-color justify-center items-center p-8 rounded-lg ">
         <div>
           <div className="text-center text-white mt-3">
-            <h3 className="font-bold text-2xl mb-3">
+            <h3 className="font-bold md:text-2xl mb-3">
               Welcome To <br /> Corporate Event Management
             </h3>
             <p className="text-sm mb-8">
