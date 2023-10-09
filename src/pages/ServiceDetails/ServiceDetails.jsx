@@ -13,6 +13,7 @@ import CallToAction from "../../components/CallToAction/CallToAction";
 import MarqueeSlider from "../../components/MarqueeSlider/MarqueeSlider";
 import Testimonial from "../../components/Testimonial/Testimonial";
 import Breadcrumbs from "../../components/Breadcrumbs/Breadcrumbs";
+import { Helmet } from "react-helmet-async";
 const ServiceDetails = () => {
   function ScrollToTopOnMount() {
     useEffect(() => {
@@ -67,6 +68,9 @@ const ServiceDetails = () => {
   };
   return (
     <div>
+      <Helmet>
+        <title>{name} - Service</title>
+      </Helmet>
       <ScrollToTopOnMount />
       <Breadcrumbs
         image={image}
@@ -74,13 +78,13 @@ const ServiceDetails = () => {
         breadCrumbs={breadCrumbs}
       ></Breadcrumbs>
       <div className="container mx-auto px-6 md:px-8 xl:px-0 py-16 lg:py-24 grid lg:grid-cols-4 gap-8">
-        <div className="lg:col-span-3">
+        <div  className="lg:col-span-3">
           <figure>
-            <img className="rounded-lg" src={image} alt={`image of ${name}`} />
+            <img data-aos="fade-up" data-aos-delay="50" className="rounded-lg" src={image} alt={`image of ${name}`} />
           </figure>
           <div className="">
-            <h2 className="text-xl xl:text-5xl font-bold my-7">{name}</h2>
-            <p className="text-lg xl:text-xl mb-1">{description}</p>
+            <h2 data-aos="fade-up" data-aos-delay="100" className="text-xl xl:text-5xl font-bold my-7">{name}</h2>
+            <p data-aos="fade-up" data-aos-delay="150" className="text-lg xl:text-xl mb-1">{description}</p>
           </div>
         </div>
         <div className="shadow-lg rounded-lg bg-corporate-lightColor p-4">
@@ -147,6 +151,8 @@ const ServiceDetails = () => {
           <div className="border-t-2 pt-4 mt-4">
             <button
               onClick={handleBookNowBtn}
+              data-aos="flip-up"
+              data-aos-delay="350"
               className="w-full bg-corporate-color text-white font-medium text-xl hover:bg-black duration-300 py-4 rounded-lg"
             >
               Book Now

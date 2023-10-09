@@ -2,6 +2,7 @@ import { useLoaderData } from "react-router-dom";
 import Breadcrumbs from "../../components/Breadcrumbs/Breadcrumbs";
 import image from "/images/banner/banner3.jpg";
 import BlogCard from "./BlogCard";
+import { Helmet } from "react-helmet-async";
 const Blog = () => {
   const blogs = useLoaderData();
   const breadCrumbs = (
@@ -11,6 +12,9 @@ const Blog = () => {
   );
   return (
     <div>
+      <Helmet>
+        <title>Blogs | Corporate Event Management</title>
+      </Helmet>
       <Breadcrumbs
         image={image}
         name={"Blog"}

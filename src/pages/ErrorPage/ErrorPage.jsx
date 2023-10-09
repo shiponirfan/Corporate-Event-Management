@@ -1,8 +1,12 @@
+import { Helmet } from "react-helmet-async";
 import { Link } from "react-router-dom";
 
 const ErrorPage = () => {
   return (
     <div>
+      <Helmet>
+        <title>Page Not Found - Corporate Event Management</title>
+      </Helmet>
       <div className="w-full h-screen flex flex-col items-center justify-center">
         <svg
           className="w-1/2 md:1/3 lg:w-1/4 text-blue-600"

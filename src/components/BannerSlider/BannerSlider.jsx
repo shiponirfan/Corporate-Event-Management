@@ -15,22 +15,37 @@ const BannerSlider = () => {
           <div className="bg-black w-full h-full absolute bg-opacity-80"></div>
           {/* Slider Content */}
           <div className="absolute px-6 md:px-8 text-center flex flex-col space-y-4 items-center justify-center text-white transform -translate-y-1/2 left-0 right-0 top-1/2 z-10">
-            <h2 className="font-bold text-xl md:text-4xl lg:text-7xl uppercase">
+            <h2
+              data-aos="fade-up"
+              className="font-bold text-xl md:text-4xl lg:text-7xl uppercase"
+            >
               We Are Event Professionals
             </h2>
-            <p className="text-sm md:text-base lg:text-lg md:px-20">
+            <p
+              data-aos="fade-up"
+              data-aos-delay="500"
+              className="text-sm md:text-base lg:text-lg md:px-20"
+            >
               You Can Find Conferences and Seminars,Team Building
               Workshops,Corporate Meetings, Award Ceremonies and more
             </p>
             {/* Slider Button */}
             <div>
               <Link to="/services">
-                <button className="hover:bg-corporate-color mb-4 md:mb-0 border-corporate-color duration-300 border-2 mx-3 py-3 font-medium px-8 rounded-lg">
+                <button
+                  data-aos="flip-up"
+                  data-aos-delay="1000"
+                  className="hover:bg-corporate-color mb-4 md:mb-0 border-corporate-color duration-300 border-2 mx-3 py-3 font-medium px-8 rounded-lg"
+                >
                   Our Services
                 </button>
               </Link>
               <Link to="/about">
-                <button className="hover:bg-corporate-color mb-4 md:mb-0 border-corporate-color duration-300 border-2 mx-3 py-3 font-medium px-8 rounded-lg">
+                <button
+                  data-aos="flip-up"
+                  data-aos-delay="1300"
+                  className="hover:bg-corporate-color mb-4 md:mb-0 border-corporate-color duration-300 border-2 mx-3 py-3 font-medium px-8 rounded-lg"
+                >
                   About Us
                 </button>
               </Link>
@@ -57,22 +72,37 @@ const BannerSlider = () => {
           <div className="bg-black w-full h-full absolute bg-opacity-80"></div>
           {/* Slider Content */}
           <div className="absolute px-6 md:px-8 text-center flex flex-col space-y-4 items-center justify-center text-white transform -translate-y-1/2 left-0 right-0 top-1/2 z-10">
-            <h2 className="font-bold text-xl md:text-4xl lg:text-7xl uppercase">
+            <h2
+              data-aos="fade-up"
+              className="font-bold text-xl md:text-4xl lg:text-7xl uppercase"
+            >
               We Are Event Professionals
             </h2>
-            <p className="text-sm md:text-base lg:text-lg md:px-20">
+            <p
+              data-aos="fade-up"
+              data-aos-delay="500"
+              className="text-sm md:text-base lg:text-lg md:px-20"
+            >
               You Can Find Conferences and Seminars,Team Building
               Workshops,Corporate Meetings, Award Ceremonies and more
             </p>
             {/* Slider Button */}
             <div>
               <Link to="/services">
-                <button className="hover:bg-corporate-color mb-4 md:mb-0 border-corporate-color duration-300 border-2 mx-3 py-3 font-medium px-8 rounded-lg">
+                <button
+                  data-aos="flip-up"
+                  data-aos-delay="1000"
+                  className="hover:bg-corporate-color mb-4 md:mb-0 border-corporate-color duration-300 border-2 mx-3 py-3 font-medium px-8 rounded-lg"
+                >
                   Our Services
                 </button>
               </Link>
               <Link to="/about">
-                <button className="hover:bg-corporate-color mb-4 md:mb-0 border-corporate-color duration-300 border-2 mx-3 py-3 font-medium px-8 rounded-lg">
+                <button
+                  data-aos="flip-up"
+                  data-aos-delay="1300"
+                  className="hover:bg-corporate-color mb-4 md:mb-0 border-corporate-color duration-300 border-2 mx-3 py-3 font-medium px-8 rounded-lg"
+                >
                   About Us
                 </button>
               </Link>
@@ -99,22 +129,37 @@ const BannerSlider = () => {
           <div className="bg-black w-full h-full absolute bg-opacity-80"></div>
           {/* Slider Content */}
           <div className="absolute px-6 md:px-8 text-center flex flex-col space-y-4 items-center justify-center text-white transform -translate-y-1/2 left-0 right-0 top-1/2 z-10">
-            <h2 className="font-bold text-xl md:text-4xl lg:text-7xl uppercase">
+            <h2
+              data-aos="fade-up"
+              className="font-bold text-xl md:text-4xl lg:text-7xl uppercase"
+            >
               We Are Event Professionals
             </h2>
-            <p className="text-sm md:text-base lg:text-lg md:px-20">
+            <p
+              data-aos="fade-up"
+              data-aos-delay="500"
+              className="text-sm md:text-base lg:text-lg md:px-20"
+            >
               You Can Find Conferences and Seminars,Team Building
               Workshops,Corporate Meetings, Award Ceremonies and more
             </p>
             {/* Slider Button */}
             <div>
               <Link to="/services">
-                <button className="hover:bg-corporate-color mb-4 md:mb-0 border-corporate-color duration-300 border-2 mx-3 py-3 font-medium px-8 rounded-lg">
+                <button
+                  data-aos="flip-up"
+                  data-aos-delay="1000"
+                  className="hover:bg-corporate-color mb-4 md:mb-0 border-corporate-color duration-300 border-2 mx-3 py-3 font-medium px-8 rounded-lg"
+                >
                   Our Services
                 </button>
               </Link>
               <Link to="/about">
-                <button className="hover:bg-corporate-color mb-4 md:mb-0 border-corporate-color duration-300 border-2 mx-3 py-3 font-medium px-8 rounded-lg">
+                <button
+                  data-aos="flip-up"
+                  data-aos-delay="13000"
+                  className="hover:bg-corporate-color mb-4 md:mb-0 border-corporate-color duration-300 border-2 mx-3 py-3 font-medium px-8 rounded-lg"
+                >
                   About Us
                 </button>
               </Link>

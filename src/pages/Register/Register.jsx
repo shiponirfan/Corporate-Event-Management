@@ -5,6 +5,7 @@ import { Link, useLocation, useNavigate } from "react-router-dom";
 import { AuthContext } from "../../providers/AuthProvider";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import { Helmet } from "react-helmet-async";
 const Register = () => {
   const { signIn, googleLogin, userProfile } = useContext(AuthContext);
   const location = useLocation();
@@ -88,7 +89,10 @@ const Register = () => {
   };
   return (
     <div className="bg-corporate-lightColor py-24">
-      <div className="max-w-4xl mx-auto grid grid-cols-2 gap-8  bg-corporate-color justify-center items-center p-8 rounded-lg ">
+      <Helmet>
+        <title>Register | Corporate Event Management</title>
+      </Helmet>
+      <div data-aos="fade-up" className="max-w-4xl mx-auto grid grid-cols-2 gap-8  bg-corporate-color justify-center items-center p-8 rounded-lg ">
         <div>
           <div className="text-center text-white mt-3">
             <h3 className="font-bold text-2xl mb-3">Create An Account</h3>

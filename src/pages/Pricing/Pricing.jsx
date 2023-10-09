@@ -6,6 +6,7 @@ import Testimonial from "../../components/Testimonial/Testimonial";
 import WhyChooseUs from "../../components/WhyChooseUs/WhyChooseUs";
 import Swal from "sweetalert2";
 import image from "/images/banner/banner4.jpg";
+import { Helmet } from "react-helmet-async";
 const Pricing = () => {
   const breadCrumbs = (
     <>
@@ -41,14 +42,17 @@ const Pricing = () => {
         breadCrumbs={breadCrumbs}
       ></Breadcrumbs>
       <div className="container mx-auto pb-10 lg:pb-20 px-6 md:px-8">
+      <Helmet>
+        <title>Pricing Plans | Corporate Event Management</title>
+      </Helmet>
         <div className="text-center lg:w-3/4 xl:w-1/2 mx-auto space-y-3 my-10 lg:my-16">
-          <h2 className="text-xl uppercase text-corporate-color font-medium">
+          <h2 data-aos="fade-up" data-aos-delay="100" className="text-xl uppercase text-corporate-color font-medium">
             Pricing Plans
           </h2>
-          <h2 className="text-3xl md:text-5xl font-bold">
+          <h2 data-aos="fade-up" data-aos-delay="250" className="text-3xl md:text-5xl font-bold">
             Cost-Effective Pricing
           </h2>
-          <p>
+          <p data-aos="fade-up" data-aos-delay="350">
             At Corporate Event Management, we offer budget-friendly event
             planning. Our competitive pricing ensures quality without breaking
             the bank. Whether you are a startup or a corporation, our
@@ -58,7 +62,7 @@ const Pricing = () => {
         </div>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5 xl:gap-8">
           {/* Package 1 */}
-          <div className="relative flex w-full flex-col rounded-xl bg-gradient-to-tr from-corporate-color to-blue-600 bg-clip-border p-8 text-white shadow-md shadow-blue-500/40">
+          <div data-aos="fade-up" data-aos-delay="450" className="relative flex w-full flex-col rounded-xl bg-gradient-to-tr from-corporate-color to-blue-600 bg-clip-border p-8 text-white shadow-md shadow-blue-500/40">
             <div className="relative m-0 mb-8 overflow-hidden rounded-none border-b border-white/10 bg-transparent bg-clip-border pb-8 text-center text-gray-700 shadow-none">
               <p className="block font-sans text-sm font-normal uppercase leading-normal text-white antialiased">
                 Basic Package
@@ -241,7 +245,7 @@ const Pricing = () => {
             </div>
           </div>
           {/* Package 2 */}
-          <div className="relative flex w-full flex-col rounded-xl bg-gradient-to-tr from-corporate-color to-blue-600 bg-clip-border p-8 text-white shadow-md shadow-blue-500/40">
+          <div data-aos="fade-up" data-aos-delay="550" className="relative flex w-full flex-col rounded-xl bg-gradient-to-tr from-corporate-color to-blue-600 bg-clip-border p-8 text-white shadow-md shadow-blue-500/40">
             <div className="relative m-0 mb-8 overflow-hidden rounded-none border-b border-white/10 bg-transparent bg-clip-border pb-8 text-center text-gray-700 shadow-none">
               <p className="block font-sans text-sm font-normal uppercase leading-normal text-white antialiased">
                 Standard Package
@@ -447,7 +451,7 @@ const Pricing = () => {
             </div>
           </div>
           {/* Package 3 */}
-          <div className="relative flex w-full flex-col rounded-xl bg-gradient-to-tr from-corporate-color to-blue-600 bg-clip-border p-8 text-white shadow-md shadow-blue-500/40">
+          <div data-aos="fade-up" data-aos-delay="650" className="relative flex w-full flex-col rounded-xl bg-gradient-to-tr from-corporate-color to-blue-600 bg-clip-border p-8 text-white shadow-md shadow-blue-500/40">
             <div className="relative m-0 mb-8 overflow-hidden rounded-none border-b border-white/10 bg-transparent bg-clip-border pb-8 text-center text-gray-700 shadow-none">
               <p className="block font-sans text-sm font-normal uppercase leading-normal text-white antialiased">
                 Premium Package

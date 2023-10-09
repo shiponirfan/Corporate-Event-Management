@@ -2,14 +2,14 @@ const WhyChooseUs = () => {
   return (
     <div className="pb-16 xl:pb-24 pt-10 px-6 md:px-8 container mx-auto">
       <div className="text-center mb-14">
-        <h2 className="text-4xl md:text-5xl font-bold mb-4">
+        <h2 data-aos="fade-up" className="text-4xl md:text-5xl font-bold mb-4">
           Why
           <span className="text-corporate-color"> Choose Us</span>
         </h2>
-        <p>Discover the Reasons to Partner with Our Event Services</p>
+        <p data-aos="fade-up" data-aos-delay="500">Discover the Reasons to Partner with Our Event Services</p>
       </div>
       <div className="grid md:grid-cols-2 xl:grid-cols-3 gap-10">
-        <div className="card hover:bg-corporate-color hover:text-white duration-300 card-side bg-base-100 p-8 border-2 rounded-lg">
+        <div data-aos="flip-left" data-aos-duration="1000" className="card hover:bg-corporate-color hover:text-white duration-300 card-side bg-base-100 p-8 border-2 rounded-lg">
           <div className="">
             <span className="text-xl font-medium border-2 border-white bg-corporate-color  w-10 h-10 flex justify-center items-center text-white  rounded-full">
               01
@@ -23,7 +23,7 @@ const WhyChooseUs = () => {
             </p>
           </div>
         </div>
-        <div className="card hover:bg-corporate-color hover:text-white duration-300 card-side bg-base-100 p-8 border-2 rounded-lg">
+        <div data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="100" className="card hover:bg-corporate-color hover:text-white duration-300 card-side bg-base-100 p-8 border-2 rounded-lg">
           <div className="">
             <span className="text-xl border-2 border-white font-medium bg-corporate-color  w-10 h-10 flex justify-center items-center text-white  rounded-full">
               02
@@ -37,7 +37,7 @@ const WhyChooseUs = () => {
             </p>
           </div>
         </div>
-        <div className="card hover:bg-corporate-color hover:text-white duration-300 card-side bg-base-100 p-8 border-2 rounded-lg">
+        <div data-aos="flip-right" data-aos-duration="1000" data-aos-delay="200" className="card hover:bg-corporate-color hover:text-white duration-300 card-side bg-base-100 p-8 border-2 rounded-lg">
           <div className="">
             <span className="text-xl border-2 border-white font-medium bg-corporate-color  w-10 h-10 flex justify-center items-center text-white  rounded-full">
               03
@@ -51,7 +51,7 @@ const WhyChooseUs = () => {
             </p>
           </div>
         </div>
-        <div className="card hover:bg-corporate-color hover:text-white duration-300 card-side bg-base-100 p-8 border-2 rounded-lg">
+        <div data-aos="flip-down" data-aos-duration="1000" data-aos-delay="300" className="card hover:bg-corporate-color hover:text-white duration-300 card-side bg-base-100 p-8 border-2 rounded-lg">
           <div className="">
             <span className="text-xl border-2 border-white font-medium bg-corporate-color  w-10 h-10 flex justify-center items-center text-white  rounded-full">
               04
@@ -65,7 +65,7 @@ const WhyChooseUs = () => {
             </p>
           </div>
         </div>
-        <div className="card hover:bg-corporate-color hover:text-white duration-300 card-side bg-base-100 p-8 border-2 rounded-lg">
+        <div data-aos="flip-down" data-aos-duration="1000" data-aos-delay="400" className="card hover:bg-corporate-color hover:text-white duration-300 card-side bg-base-100 p-8 border-2 rounded-lg">
           <div className="">
             <span className="text-xl border-2 border-white font-medium bg-corporate-color  w-10 h-10 flex justify-center items-center text-white  rounded-full">
               05
@@ -79,7 +79,7 @@ const WhyChooseUs = () => {
             </p>
           </div>
         </div>
-        <div className="card hover:bg-corporate-color hover:text-white duration-300 card-side bg-base-100 p-8 border-2 rounded-lg">
+        <div data-aos="flip-down" data-aos-duration="1000" data-aos-delay="500" className="card hover:bg-corporate-color hover:text-white duration-300 card-side bg-base-100 p-8 border-2 rounded-lg">
           <div className="">
             <span className="text-xl border-2 border-white font-medium bg-corporate-color  w-10 h-10 flex justify-center items-center text-white  rounded-full">
               06

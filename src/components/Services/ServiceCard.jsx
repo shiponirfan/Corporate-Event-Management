@@ -8,8 +8,8 @@ import {
   FaSitemap,
 } from "react-icons/fa";
 import { Link } from "react-router-dom";
-
 const ServiceCard = ({ service }) => {
+
   const {
     id,
     name,
@@ -23,7 +23,7 @@ const ServiceCard = ({ service }) => {
   } = service;
   const [favorite, setFavorite] = useState(false);
   return (
-    <div className="card bg-base-100 shadow-xl">
+    <div data-aos="fade-up" className="card bg-base-100 shadow-xl">
       <figure>
         <img src={image} alt={`image of ${name}`} />
       </figure>
